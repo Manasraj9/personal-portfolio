@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="-center bg-gray-800 p-5 max-h-20 relative  relative md:staticmd:static">
+    <nav className="hidden md:flex items-center justify-between bg-gray-800 px-8 py-4">
       <span className="hidden md:block font-bold text-3xl min-w-30 text-white">My Portfolio</span>
 
       {/* Mobile floating navbar */}
@@ -43,7 +43,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop navigation links */}
-      <div className="hidden md:flex md:flex-grow md:justify-end md:space-x-6 md:space-y-1 font-bold text-lg">
+      <div className="hidden md:flex md:flex-grow items-center justify-between md:justify-end md:space-x-6 md:space-y-1 font-bold text-lg">
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           <Link href="#home" className="navlink flex items-center" onClick={toggleMenu}>
             <FaHome className="mr-1" /> Home
@@ -57,9 +57,9 @@ export default function Navbar() {
           <Link href="#projects" className="navlink flex items-center" onClick={toggleMenu}>
             <PiProjectorScreenChartFill className="mr-1" /> Projects
           </Link>
-          {/* <Link href="#experiences" className="navlink flex items-center" onClick={toggleMenu}>
+      {/* <Link href="#experiences" className="navlink flex items-center" onClick={toggleMenu}>
             <FaFolderOpen className="mr-1" /> Experience
-          </Link> */}
+        Link> */}
           <Link href="#contact" className="navlink flex items-center" onClick={toggleMenu}>
             <FaEnvelope className="mr-1" /> Contact
           </Link>

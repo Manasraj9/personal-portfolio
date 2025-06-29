@@ -7,33 +7,39 @@ const data = [
     cat: "Web Development",
     items: [
       {
-        title: "Portfolio Site",
-        desc: "Personal portfolio built with React & Tailwind.",
-        tech: ["React", "Tailwind", "Vercel"],
+        title: "Gym CRM",
+        desc: "Gym CRM is a customer relationship management system for a gym. It is used to manage customer data, schedule appointments, and track memberships. Email - admin@gmail.com Password - 123456789",
+        tech: ["React", "Tailwind", "firebase","Firstore"],
         images: [
-          "https://via.placeholder.com/800x450?text=Portfolio+1",
-          "https://via.placeholder.com/800x450?text=Portfolio+2",
-          "https://via.placeholder.com/800x450?text=Portfolio+3",
+          "/images/GYM_crm/Screenshot 2025-06-29 121207.png",
+          "/images/GYM_crm/Screenshot 2025-06-29 121221.png",
+          "/images/GYM_crm/Screenshot 2025-06-29 121233.png",
+          "/images/GYM_crm/Screenshot 2025-06-29 121307.png",
+        ],
+        live: "https://gym-management-system-36fcf.web.app/login",
+        repo: "#",
+      },
+      {
+        title: "Zylokart (E‑Commerce Store)",
+        desc: "A fully functional full-stack e-commerce platform featuring customer storefront, product management, secure checkout, and an intuitive admin dashboard for order and inventory control.",
+        tech: ["Next.js", "Supavbase", "Tailwind", "ShadCN"],
+        images: [
+          "/images/E-commerce/Screenshot 2025-06-13 122827.png",
         ],
         live: "#",
         repo: "#",
       },
       {
-        title: "E‑Commerce Store",
-        desc: "Full‑stack MERN shop with Stripe payments.",
-        tech: ["Next.js", "MongoDB", "Stripe"],
-        images: [
-          "https://via.placeholder.com/800x450?text=Shop+1",
-          "https://via.placeholder.com/800x450?text=Shop+2",
+        title: "Right Resource Fit",
+        desc: "For Job searching and posting with end to end hiring processes",
+        tech: ["React.js", "Tailwind", "Node.js", "Express.js","MongoDB"],
+        images: ["/images/RRF/Screenshot 2025-06-29 124643.png",
+                  "/images/RRF/Screenshot 2025-06-29 124657.png",
+                  "/images/RRF/Screenshot 2025-06-29 124709.png",
+                  "/images/RRF/Screenshot 2025-06-29 124720.png",
+                  "/images/RRF/Screenshot 2025-06-29 124739.png",
         ],
-        live: "#",
-        repo: "#",
-      },
-      {
-        title: "Blog Platform",
-        desc: "Markdown blog with Next.js 13 App Router.",
-        tech: ["Next.js", "Prisma", "PostgreSQL"],
-        images: ["https://via.placeholder.com/800x450?text=Blog"],
+        repo: "https://github.com/Manasraj9/RightResourceFit_Infosys_Internship_Oct2024_Team_02",
       },
       {
         title: "Recipe Hub",
@@ -162,13 +168,13 @@ export default function Projects() {
             {/* links */}
             <div className="mt-4 flex gap-4 justify-center">
               {p.live && p.live !== "#" && (
-                <a href={p.live} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                  Live
+                <a href={p.live} target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 border-2 p-2 rounded-xl hover:underline hover:bg-white hover:text-blue-400">
+                  Live Link
                 </a>
               )}
               {p.repo && p.repo !== "#" && (
-                <a href={p.repo} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                  Code
+                <a href={p.repo} target="_blank" rel="noopener noreferrer" className="text-white bg-blue-500 border-2 p-2 rounded-xl hover:underline hover:bg-white hover:text-blue-400">
+                  View Code
                 </a>
               )}
             </div>
@@ -216,13 +222,13 @@ export default function Projects() {
               <>
                 <button
                   onClick={prevImg}
-                  className="absolute left-0 top-1/2 -translate-y-1/2 text-4xl text-white/70 hover:text-white px-4"
+                  className="absolute left-0 top-1/2 -translate-y-1/2 text-4xl text-blue-400 hover:text-blue-800 px-4"
                 >
                   <FaChevronLeft />
                 </button>
                 <button
                   onClick={nextImg}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 text-4xl text-white/70 hover:text-white px-4"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 text-4xl text-blue-400 hover:text-blue-800 px-4"
                 >
                   <FaChevronRight />
                 </button>
